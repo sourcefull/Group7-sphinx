@@ -1,4 +1,4 @@
-back end
+Back End
 ========
 
 .. toctree::

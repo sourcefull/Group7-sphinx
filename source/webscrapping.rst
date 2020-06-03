@@ -1,6 +1,20 @@
 Webscrapping
 ============
 
+.. py:function:: get_links(user, t):
+
+   
+   Gets video links for specified user.
+
+   
+   :param str user: content creator's username, i.e. - 'bgfilms'
+   :param str t: type of content creator specified by user i.e. 'u' - user, 'p' - playlist, 'c' - channel
+   :return: list of links to videos
+   :rtype: videolist : list
+   :raises TypeError: if user or t is not a basestring
+   
+   
+   
 .. py:function:: get_vid_data(folder,file):
 
    
