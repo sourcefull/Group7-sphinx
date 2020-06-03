@@ -1,16 +1,11 @@
 Welcome to ECE 229 Project 7's documentation!
 =============================================
 
-Another simple header
-=====================
+User Guide
+==========
 
-Here is some text explaning some very complicated stuff
+Welcome to the sphinx documentation for ECE 229 Group 7's 
 
-    print 'hello'
-    >>hello
-
-Guide
-^^^^^
 
 .. toctree::
    :maxdepth: 2
