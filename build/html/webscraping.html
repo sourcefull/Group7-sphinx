@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Webscrapping &#8212; ECE229 project 7 0.0.1 documentation</title>
+    <title>Webscraping &#8212; ECE229 project 7 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,7 +15,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Analysis" href="analysis.html" />
-    <link rel="prev" title="back end" href="backend.html" />
+    <link rel="prev" title="back end" href="Backend Functions.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,8 +32,8 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="webscrapping">
-<h1>Webscrapping<a class="headerlink" href="#webscrapping" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="webscraping">
+<h1>Webscraping<a class="headerlink" href="#webscraping" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt>
 <code class="sig-name descname">get_video_data(folder,file):</code></dt>
@@ -64,12 +64,18 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>user</strong> (<em>str</em>) – creator’s username</p></li>
-<li><p><strong>t</strong> (<em>char</em>) – type of content creator i.e., user, playlist, channel</p></li>
+<li><p><strong>user</strong> (<em>str</em>) – creator’s username i.e. - ‘bgfilms’</p></li>
+<li><p><strong>t</strong> (<em>char</em>) – type of content creator i.e. ‘u’ - user, ‘p’ - playlist, ‘c’ - channel</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>writes video links into file in source_links folder</p>
+<dd class="field-even"><p>list of links to videos</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>videolist : list</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>TypeError</strong> – if user or t is not a basestring</p>
 </dd>
 </dl>
 </dd></dl>
@@ -193,20 +199,20 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="backend.html">back end</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Webscrapping</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Backend Functions.html">back end</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Webscraping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analysis.html">Analysis</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="frontend.html">Front End</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frontend Functions.html">Front End</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="backend.html">back end</a><ul>
-      <li>Previous: <a href="backend.html" title="previous chapter">back end</a></li>
+  <li><a href="Backend Functions.html">back end</a><ul>
+      <li>Previous: <a href="Backend Functions.html" title="previous chapter">back end</a></li>
       <li>Next: <a href="analysis.html" title="next chapter">Analysis</a></li>
   </ul></li>
   </ul></li>
@@ -242,7 +248,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/webscrapping.rst.txt"
+      <a href="_sources/webscraping.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

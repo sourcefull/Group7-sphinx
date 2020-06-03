@@ -1,4 +1,4 @@
-Webscrapping
+Webscraping
 ============
 
 .. py:function:: get_video_data(folder,file):
@@ -18,10 +18,11 @@ Webscrapping
 
    Gets video links user
 
-   :param str user: creator's username
-   :param char t: type of content creator i.e., user, playlist, channel
-   :return: writes video links into file in source_links folder
-   
+   :param str user: creator's username i.e. - 'bgfilms'
+   :param char t: type of content creator i.e. 'u' - user, 'p' - playlist, 'c' - channel
+   :return: list of links to videos
+   :rtype: videolist : list   
+   :raises TypeError: if user or t is not a basestring 
 
 .. code-block:: python
    

@@ -1,10 +1,10 @@
-Back End
+back end
 ========
 
 .. toctree::
    :maxdepth: 2
    
-   webscrapping
+   webscraping
    analysis
  
 

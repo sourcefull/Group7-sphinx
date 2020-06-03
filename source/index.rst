@@ -5,13 +5,16 @@ User Guide
 ==========
 
 Welcome to the sphinx documentation for ECE 229 Group 7's 
+This documentation contains the function and test function descriptions for
+Group 7's Youtube Content creator dashboard web app
+
 
 
 .. toctree::
    :maxdepth: 2
    
-   backend
-   frontend
+   Backend Functions
+   Frontend Functions
 
 
 Indices and tables
