@@ -1,7 +1,12 @@
 Webscraping
 ============
 
-.. py:function:: get_video_data(folder,file):
+
+Below are function definitions used to perform the webscraping from youtube and the respective test functions   
+
+
+
+.. py:function:: get_vid_data(folder,file):
 
    
    For each video in a list in a file, scrape the video name, description, number of likes, number of dislikes, date posted, and number of view.
@@ -14,20 +19,13 @@ Webscraping
    :raises TypeError: if folder or file is not a basestring
 
 
-.. py:function:: get_video_links(user, t):
-
-   Gets video links user
-
-   :param str user: creator's username i.e. - 'bgfilms'
-   :param char t: type of content creator i.e. 'u' - user, 'p' - playlist, 'c' - channel
-   :return: list of links to videos
-   :rtype: videolist : list   
-   :raises TypeError: if user or t is not a basestring 
+Below is an example code of how to run get_vid_data
+   
 
 .. code-block:: python
    
    """
-   The following code automatically gets video data for all lists in SRC_DIR
+   The following code automatically gets video data for all lists in SRC_DIR using get_vid_data
    """
 	
    #imports
@@ -70,6 +68,21 @@ Webscraping
         pdb.post_mortem(tb) 
 
 
+
+.. py:function:: get_links(user, t):
+
+   Gets video links user
+
+   :param str user: creator's username i.e. - 'bgfilms'
+   :param char t: type of content creator i.e. 'u' - user, 'p' - playlist, 'c' - channel
+   :return: list of links to videos
+   :rtype: videolist : list   
+   :raises TypeError: if user or t is not a basestring 
+   :raises TypeError: if length of t is not equal to 1
+   :raises assertionError: if t is not equal to 'u', 'p', 'c'
+
+Below is an example code of how to use get_links
+  
 .. code-block:: python
    
    """
@@ -103,7 +116,7 @@ Webscraping
    
 .. py:function:: test_get_video_data():
    
-   Pytest test for get_video_data function
+   Pytest test for get_vid_data function
 
    :raises assertionError: if d.columns do not all contain 'title','date','likes','dislikes','views','description'
    :raises assertionError: if d.title is not equal to 'Group 48 Video Presentation'
@@ -112,7 +125,7 @@ Webscraping
 
 .. py:function:: test_get_video_links():
 
-   Pytest test for get_video_links function
+   Pytest test for get_links function
 
    :raises assertionError: if links does not equal 'https://www.youtube.com/watch?v=2tDmuNu_1FQ'
 
