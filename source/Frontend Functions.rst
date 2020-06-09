@@ -3,6 +3,7 @@ Front End
 
 Below are function definitions used to perform the front end part three
 Function analyze_text_color
+
 .. py:function:: analyze_text_color(text, genre, metric):
 
    
@@ -15,7 +16,9 @@ Function analyze_text_color
    :return: a list with the same number of elements as number of words in given text, with each corresponding element being the color for that word: "red" means bad, "yellow" means okay, "green" means good and "white" means "Not found" (in database)
    :rtype: list
    :raises TypeError: none
+   
 Function color_changer
+
 .. py:function:: color_changer(x,Genre,Metric)
    
    change the color of input text instantly
