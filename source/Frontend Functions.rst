@@ -7,7 +7,7 @@ Function for front-end part I is given as below.
   
    This function is to plot word cloud over all time.
 
-   :param str x: Input timestamp from the slider which indicates the time of the word cloud
+   :param Timestamp x: Input timestamp from the slider which indicates the time of the word cloud
    :param str Genre: scalar depicting the genre of the content: "cooking", "gaming", "influencers"
    :return: none, but a word cloud should be shown in the graph
    :rtype: none
@@ -24,8 +24,8 @@ Function for front-end part II is given as below.
    
    :param Timestamp x: Input timestamp from the slider which indicates the time of the word cloud
    :param str Genre: scalar depicting the genre of the content: "cooking", "gaming", "influencers"
-   :return: None, but a word cloud should be shown in the graph
-   :rtype: None
+   :return: none, but a word cloud should be shown in the graph
+   :rtype: none
    :raises TypeError: none
 
 Below are function definitions used to perform the front end part three
