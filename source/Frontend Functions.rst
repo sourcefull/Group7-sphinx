@@ -102,3 +102,11 @@ Function color_changer
    :param str metric: scalar depicting the metric to base the analysis on: "likes_mean", "likes_median", "dislikes_mean", "dislikes_median", "views_mean", "views_median", "polarity", "subjectivity"
    :return: none
    
+Below is an example showing how to use the function.
+
+.. code-block:: python
+
+    from front_end.function_partIII import analyze_text_color,color_changer
+    assert analyze_text_color('today we will cook delicious beef', 'cooking', 'subjectivity')==['yellow', 'white', 'yellow', 'yellow', 'green', 'yellow']
+    assert analyze_text_color('amazing social skills', 'influencers', 'likes_mean')==['yellow', 'yellow', 'yellow']
+    assert analyze_text_color('funny lives in splatoon', 'gaming', 'likes_mean')==['yellow', 'yellow', 'yellow', 'white']
