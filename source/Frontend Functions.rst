@@ -17,7 +17,7 @@ Below is an example showing how to use the function.
 
 .. code-block:: python
     """
-    The code below shows how to use the function to show word clouds
+    The code below shows how to use the function to show word cloud
     """
    import os
    from random import shuffle
