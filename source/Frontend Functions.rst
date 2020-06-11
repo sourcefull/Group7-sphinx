@@ -16,22 +16,26 @@ Function for front-end part I is given as below.
 Below is an example showing how to use the function.
 
 .. code-block:: python
-    import os
-    from random import shuffle
-    from front_end.wordscloud import wordscloud
+    """
+    The code below shows how to use the function to show word clouds
+    """
+   import os
+   from random import shuffle
+   from front_end.wordscloud import wordscloud
     
-    year_end=2019
-    year_start=2015
-    Genre=['cooking', 'influencers', 'gaming']
-    time_idx=pd.date_range(start=str(year_start)+'0101',end=str(year_end)+'1231',freq='M')
-    fmt='%Y-%m'
-    options = [(item.strftime(fmt),item) for item in time_idx]
-    shuffle(options)
-    optionstest=[i[0] for i in options]
-    for j in range(2):
-        testx=optionstest[j]
-        for i in Genre:
-            wordscloud(testx,i)
+   year_end=2019
+   year_start=2015
+   Genre=['cooking', 'influencers', 'gaming']
+   time_idx=pd.date_range(start=str(year_start)+'0101',end=str(year_end)+'1231',freq='M')
+   fmt='%Y-%m'
+   options = [(item.strftime(fmt),item) for item in time_idx]
+   shuffle(options)
+   optionstest=[i[0] for i in options]
+   for j in range(2):
+       testx=optionstest[j]
+       for i in Genre:
+           wordscloud(testx,i)
+
 
 Function for front-end part II is given as below.
 
@@ -47,6 +51,31 @@ Function for front-end part II is given as below.
    :return: none, but a word cloud should be shown in the graph
    :rtype: none
    :raises TypeError: none
+
+Below is an example showing how to use the function.
+
+.. code-block:: python
+
+    import numpy as np
+    from random import shuffle
+    import pandas as pd
+    import os
+    from front_end.P_N_cloud import P_N_cloud
+    
+    
+    
+    year_end=2019
+    year_start=2015
+    Genre=['cooking', 'influencers', 'gaming']
+    time_idx=pd.date_range(start=str(year_start)+'0101',end=str(year_end)+'1231',freq='M')
+    fmt='%Y-%m'
+    options = [(item.strftime(fmt),item) for item in time_idx]
+    shuffle(options)
+    optionstest=[i[0] for i in options]
+    for j in range(2):
+        testx=optionstest[j]
+        for i in Genre:
+            P_N_cloud(testx,i)
 
 Below are function definitions used to perform the front end part three
 Function analyze_text_color
