@@ -21,7 +21,7 @@ Below are function definitions used to perform the webscraping from youtube and 
 
 .. code-block:: python
 
-   >>> get_videeo_links()
+   >>> get_videeo_links('cooking', 'bgfilms.txt')
    >>> Link 1 of 180.
        Link 2 of 180.
        Link 3 of 180.
